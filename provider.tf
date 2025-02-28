@@ -8,7 +8,7 @@ terraform {
   }
   backend "s3" {
     # bucket name will be the AWS bucket name created in AWS
-    bucket = "daws-remote-state"
+    bucket = "myawsbucket-remote"
     # key name is to specify remote state files in aws- change the key name according to infra creation
     key    = "use-remote-state"
     region = "us-east-1"
